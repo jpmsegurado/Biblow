@@ -1,0 +1,148 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nenhum livro escolhido"
+            android:id="@+id/nenhum"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="25dp"
+            android:textColor="#777"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lin_livro"
+            tools:context="joaopedrosegurado.com.br.biblow.LivroFragment"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_da_obra"
+                android:textColor="#777"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#777"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Harry potter"
+                android:id="@+id/obra"
+                android:paddingLeft="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/autor"
+                android:textColor="#777"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#777"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:text="JK Rowling"
+                android:paddingLeft="20dp"
+                android:id="@+id/autor"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/editora"
+                android:textColor="#777"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#777"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Editora Abril"
+                android:id="@+id/editora"
+                android:paddingLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/situacao"
+                android:textColor="#777"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#777"
+                android:textSize="25dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Reservado"
+                android:id="@+id/situacao"
+                />
+
+            <Button
+                android:id="@+id/reservar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/reservar"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="visible"
+                android:background="@drawable/button_login_shape"
+                android:textColor="#fff"
+                />
+
+            <Button
+                android:id="@+id/avise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/avise"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                android:background="@drawable/button_login_shape"
+                android:textColor="#fff"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

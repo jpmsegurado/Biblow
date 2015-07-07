@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/item_livro_selector"
+    >
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:src="@drawable/icone"
+        android:id="@+id/disponivel"
+        android:visibility="gone"
+        android:background="@drawable/shape_redondo_livro"/>
+
+    <ImageView
+        android:id="@+id/indisponivel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:src="@drawable/icone"
+        android:background="@drawable/shape_redondo_livro_2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#777"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="titulo"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/autor"
+            android:text="autor"
+            android:textSize="15dp"
+            android:textColor="#777"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+</LinearLayout>

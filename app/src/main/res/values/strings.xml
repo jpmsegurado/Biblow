@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Biblow</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="matricula">matrícula</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="senha">senha</string>
+    <string name="entrar">entrar</string>
+    <string name="nome_da_obra">Nome da obra</string>
+    <string name="autor">Autor</string>
+    <string name="estado">Estado</string>
+    <string name="situacao">Situação</string>
+    <string name="editora">Editora</string>
+    <string name="reservar">Reservar</string>
+    <string name="avise">Avise-me ao ficar disponível</string>
+
+    <string-array name="menu">
+        <item>Pesquisar livros</item>
+        <item>Meus interesses</item>
+        <item>Tirar foto</item>
+    </string-array>
+
+    <string-array name="menu_tablet">
+        <item>Meus interesses</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="remover">Remover dos interesses</string>
+
+</resources>

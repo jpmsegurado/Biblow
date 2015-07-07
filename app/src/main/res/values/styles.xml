@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#446CB3</item>
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:textViewStyle">@style/txv</item>
+    </style>
+
+    <style name="txv" parent="TextAppearance.AppCompat">
+        <item name="android:color">#777</item>
+    </style>
+
+
+</resources>
