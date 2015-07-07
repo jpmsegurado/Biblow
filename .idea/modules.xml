@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Biblow.iml" filepath="$PROJECT_DIR$/Biblow.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/biblow.iml" filepath="$PROJECT_DIR$/biblow.iml" />
     </modules>
   </component>
 </project>
-

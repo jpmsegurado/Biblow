@@ -19,7 +19,7 @@
     <string-array name="menu">
         <item>Pesquisar livros</item>
         <item>Meus interesses</item>
-        <item>Tirar foto</item>
+
     </string-array>
 
     <string-array name="menu_tablet">

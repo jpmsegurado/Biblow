@@ -118,16 +118,6 @@ public class MainActivity extends ActionBarActivity {
                             dl.closeDrawers();
                             return;
                         }
-                    } else if (position == 2) {
-
-                        if (ff.isVisible()) {
-                            dl.closeDrawers();
-                            return;
-                        }
-
-                        ft.hide(getFragmentVisivel());
-                        ft.show(ff);
-
                     } else if (position == 0) {
 
                         if (mf.isVisible()) {
@@ -215,7 +205,7 @@ public class MainActivity extends ActionBarActivity {
         lf = new LivroFragment();
         itf = new InteressesFragment();
         lif = new LivroIntFragment();
-        ff = new FotoFragment();
+
 
 
         if(!tablet){
@@ -225,11 +215,9 @@ public class MainActivity extends ActionBarActivity {
             ft.add(R.id.frame_container,lf);
             ft.add(R.id.frame_container,itf);
             ft.add(R.id.frame_container,lif);
-            ft.add(R.id.frame_container,ff);
             ft.hide(lf);
             ft.hide(itf);
             ft.hide(lif);
-            ft.hide(mf);
             ft.commit();
         }else{
             //Adicionando os fragments
@@ -273,14 +261,12 @@ public class MainActivity extends ActionBarActivity {
     public Fragment getFragmentVisivel(){
         if(mf.isVisible() && lf.isHidden() && itf.isHidden() && lif.isHidden()){
             return mf;
-        }else if(itf.isVisible() && lf.isHidden() && mf.isHidden() && lif.isHidden() && ff.isHidden()){
+        }else if(itf.isVisible() && lf.isHidden() && mf.isHidden() && lif.isHidden()){
             return itf;
-        }else if(itf.isHidden() && lf.isHidden() && mf.isHidden() && lif.isVisible() && ff.isHidden()){
+        }else if(itf.isHidden() && lf.isHidden() && mf.isHidden() && lif.isVisible()){
             return lif;
-        }else if(itf.isHidden() && lf.isHidden() && mf.isHidden() && lif.isVisible() && ff.isHidden()){
+        }else if(itf.isHidden() && lf.isHidden() && mf.isHidden() && lif.isVisible()){
             return lif;
-        }else if(itf.isHidden() && lf.isHidden() && mf.isHidden() && lif.isHidden() && ff.isVisible()){
-            return ff;
         }else{
             return lf;
         }
